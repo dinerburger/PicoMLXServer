@@ -44,7 +44,6 @@
 		F861C3842BAA67E4004BBB86 /* ServerLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F861C3832BAA67E4004BBB86 /* ServerLogView.swift */; };
 		F88F11102BA92D5B004743A5 /* ServerManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F110F2BA92D5B004743A5 /* ServerManagerView.swift */; };
 		F88F11122BA92D75004743A5 /* ServerListMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88F11112BA92D75004743A5 /* ServerListMenu.swift */; };
-		F8907A382BA8060B00246735 /* server.py in Resources */ = {isa = PBXBuildFile; fileRef = F8907A372BA8060B00246735 /* server.py */; };
 		F8907A3A2BA807AB00246735 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8907A392BA807AB00246735 /* Server.swift */; };
 		F8907A3C2BA8B42200246735 /* ServerOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8907A3B2BA8B42200246735 /* ServerOperation.swift */; };
 		F8907A3E2BA8D83700246735 /* ServerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8907A3D2BA8D83700246735 /* ServerListView.swift */; };
@@ -101,7 +100,6 @@
 		F861C3832BAA67E4004BBB86 /* ServerLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerLogView.swift; sourceTree = "<group>"; };
 		F88F110F2BA92D5B004743A5 /* ServerManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerManagerView.swift; sourceTree = "<group>"; };
 		F88F11112BA92D75004743A5 /* ServerListMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListMenu.swift; sourceTree = "<group>"; };
-		F8907A372BA8060B00246735 /* server.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = server.py; sourceTree = "<group>"; };
 		F8907A392BA807AB00246735 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
 		F8907A3B2BA8B42200246735 /* ServerOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerOperation.swift; sourceTree = "<group>"; };
 		F8907A3D2BA8D83700246735 /* ServerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerListView.swift; sourceTree = "<group>"; };
@@ -266,7 +264,6 @@
 		F88F110E2BA92CEC004743A5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F8907A372BA8060B00246735 /* server.py */,
 				F8907A392BA807AB00246735 /* Server.swift */,
 				F8907A3F2BA8F2BD00246735 /* ServerController.swift */,
 				F8907A3B2BA8B42200246735 /* ServerOperation.swift */,
@@ -411,7 +408,6 @@
 				F818D9562B96A4DE00BA4664 /* Assets.xcassets in Resources */,
 				F8145FDA2BA17F440086CBE7 /* Dependencies.plist in Resources */,
 				F8145FFB2BA264D10086CBE7 /* Execute.command in Resources */,
-				F8907A382BA8060B00246735 /* server.py in Resources */,
 				F8145FFC2BA264D10086CBE7 /* uninstall.command in Resources */,
 				F8145FFA2BA264D10086CBE7 /* BrewInstall.command in Resources */,
 			);
@@ -621,11 +617,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PicoMLXServer/PicoMLXServer.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"PicoMLXServer/Preview Content\"";
-				DEVELOPMENT_TEAM = TPKP4XK352;
+				DEVELOPMENT_TEAM = G5PPY9S5JD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -637,7 +634,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 0.1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.PicoMLXServer;
+				PRODUCT_BUNDLE_IDENTIFIER = net.kahn.PicoMLXServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -650,11 +647,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = PicoMLXServer/PicoMLXServer.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"PicoMLXServer/Preview Content\"";
-				DEVELOPMENT_TEAM = TPKP4XK352;
+				DEVELOPMENT_TEAM = G5PPY9S5JD;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -666,7 +664,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 0.1.3;
-				PRODUCT_BUNDLE_IDENTIFIER = com.starlingprotocol.PicoMLXServer;
+				PRODUCT_BUNDLE_IDENTIFIER = net.kahn.PicoMLXServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -12,7 +12,7 @@ struct ServerManagerView: View {
     @Environment(\.openURL) var openURL
     @Environment(ServerController.self) private var serverController
     
-    @State private var model: String = "mlx-community/Nous-Hermes-2-Mistral-7B-DPO-4bit-MLX"
+    @State private var model: String = "mlx-community/starcoder2-7b-4bit"
     @State private var port: Int = 8080
     @State private var showCustomModelTextField = false
     @State private var showError = false
@@ -20,14 +20,7 @@ struct ServerManagerView: View {
     
     // TODO: https://x.com/ronaldmannak/status/1770123553666711778?s=20
     let models = [
-        "mlx-community/Nous-Hermes-2-Mistral-7B-DPO-4bit-MLX",
-        "mlx-community/NeuralBeagle14-7B-4bit-mlx",
-        "mlx-community/Mistral-7B-v0.1-hf-4bit-mlx",
-        "mlx-community/starcoder2-15b-4bit",
-        "mlx-community/quantized-gemma-2b-it",
-        "mlx-community/quantized-gemma-2b",
-        "mlx-community/Mixtral-8x7B-v0.1-hf-4bit-mlx",
-        "mlx-community/Llama-2-7b-chat-mlx",        
+        "mlx-community/starcoder2-7b-4bit",
     ]
     
     var body: some View {

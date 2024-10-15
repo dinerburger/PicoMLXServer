@@ -76,9 +76,6 @@ final class Server: Identifiable {
 extension Server: Hashable {
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
-        hasher.combine(isOn)
-        hasher.combine(model)
-        hasher.combine(port)
     }
 }
 

@@ -1,4 +1,5 @@
 {
+  "originHash" : "84004781dda320afabd53e7c64148ddf301b1d6b82f34af79aceb9810e9f25b8",
   "pins" : [
     {
       "identity" : "fulldiskaccess",
@@ -15,7 +16,7 @@
       "location" : "https://github.com/ml-explore/mlx-swift/",
       "state" : {
         "branch" : "main",
-        "revision" : "d20d63929e0586ba739448ff6de09c405c57eb5c"
+        "revision" : "9a0d25688b5835c54413475c09c537d6338360e3"
       }
     },
     {
@@ -64,5 +65,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }

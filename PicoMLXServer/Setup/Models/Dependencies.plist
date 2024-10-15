@@ -77,60 +77,23 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>mlx</string>
-				<key>versionCommands</key>
-				<array>
-					<string>conda activate pico</string>
-					<string>pip show mlx</string>
-					<string>conda deactivate</string>
-				</array>
-				<key>minimumVersionRequired</key>
-				<string>0.7.0</string>
-				<key>versionRegex</key>
-				<string>(?&lt;=Version: )[\d.]+</string>
-				<key>installCommands</key>
-				<array>
-					<string>conda create --yes --name pico python=3.9.6</string>
-					<string>conda activate pico</string>
-					<string>conda install --yes conda-forge::mlx</string>
-					<string>conda deactivate</string>
-				</array>
-				<key>isInstalledCommand</key>
-				<string></string>
-				<key>updateCommands</key>
-				<array>
-					<string>conda activate pico</string>
-					<string>conda update --all --yes</string>
-					<string>conda deactivate</string>
-				</array>
-				<key>outdatedCommand</key>
-				<string></string>
-				<key>comment</key>
-				<string>MLX installed using conda-forge</string>
-				<key>url</key>
-				<string>https://ml-explore.github.io/mlx/build/html/install.html</string>
-				<key>required</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>mlxserver</string>
+				<string>mlx-lm</string>
 				<key>versionCommand</key>
 				<string>test</string>
 				<key>versionCommands</key>
 				<array>
 					<string>conda activate pico</string>
-					<string>pip show mlxserver</string>
+					<string>pip show mlx-lm</string>
 					<string>conda deactivate</string>
 				</array>
 				<key>minimumVersionRequired</key>
-				<string>0.1.14</string>
+				<string>0.19.1</string>
 				<key>versionRegex</key>
 				<string>(?&lt;=Version: )[\d.]+</string>
 				<key>installCommands</key>
 				<array>
 					<string>conda activate pico</string>
-					<string>pip install mlxserver</string>
+					<string>pip install mlx-lm</string>
 					<string>conda deactivate</string>
 				</array>
 				<key>isInstalledCommand</key>
@@ -138,7 +101,7 @@
 				<key>updateCommands</key>
 				<array>
 					<string>conda activate pico</string>
-					<string>conda update --yes mlx</string>
+					<string>conda update --yes mlx-lm</string>
 					<string>conda deactivate</string>
 				</array>
 				<key>outdatedCommand</key>
@@ -221,50 +184,18 @@
 			</dict>
 			<dict>
 				<key>name</key>
-				<string>mlx</string>
+				<string>mlx-lm</string>
 				<key>versionCommands</key>
 				<array>
-					<string>pip show mlx</string>
+					<string>pip show mlx-lm</string>
 				</array>
 				<key>versionRegex</key>
 				<string>(?&lt;=Version: )[\d.]+</string>
 				<key>minimumVersionRequired</key>
-				<string>0.7.0</string>
+				<string>0.19.1</string>
 				<key>installCommands</key>
 				<array>
-					<string>python3 pip install mlx</string>
-				</array>
-				<key>isInstalledCommand</key>
-				<string></string>
-				<key>updateCommands</key>
-				<array>
-					<string>pip install mlx --upgrade</string>
-				</array>
-				<key>outdatedCommands</key>
-				<array>
-					<string>pip list --outdated | grep mlx</string>
-				</array>
-				<key>comment</key>
-				<string>MLX</string>
-				<key>url</key>
-				<string>https://ml-explore.github.io/mlx/build/html/install.html</string>
-				<key>required</key>
-				<true/>
-			</dict>
-			<dict>
-				<key>name</key>
-				<string>mlxserver</string>
-				<key>versionCommands</key>
-				<array>
-					<string>pip show mlxserver</string>
-				</array>
-				<key>versionRegex</key>
-				<string>(?&lt;=Version: )[\d.]+</string>
-				<key>minimumVersionRequired</key>
-				<string>0.1.14</string>
-				<key>installCommands</key>
-				<array>
-					<string>python3 pip install mlxserver</string>
+					<string>python3 pip install mlx-lm</string>
 				</array>
 				<key>isInstalledCommand</key>
 				<string></string>
