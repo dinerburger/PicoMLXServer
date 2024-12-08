@@ -12,7 +12,7 @@ final class ServerController {
     
     var servers = [Server]()
     
-    func addServer(model: String = "mlx-community/starcoder2-7b-4bit", port: Int = 8080) throws {                        
+    func addServer(model: String = "mlx-community/starcoder2-3b-4bit", port: Int = 8080) throws {                        
         let server = Server(model: model, port: port)
         servers.append(server)
     }
