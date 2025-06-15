@@ -20,7 +20,7 @@ protocol BashOutputProtocol {
     func bashOperation(_ operation: BashOperation, receivedError string: String)
 }
 
-class BashOperation: Operation {
+class BashOperation: Operation, @unchecked Sendable {
     
     let logger = Logger(subsystem: "PicoMLXServer", category: "BashOperation")
     
@@ -37,10 +37,10 @@ class BashOperation: Operation {
     /// the script will cancel and forward the exit code
     /// 0 is success, anything else is an error
     /// http://www.tldp.org/LDP/abs/html/exitcodes.html
-    private (set) var exitStatus: Int?
+    private(set) var exitStatus: Int?
     
     /// Complete output
-    private (set) var output: String = ""
+    private(set) var output: String = ""
     
     private let task = Process()
     private let outputPipe = Pipe()

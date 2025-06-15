@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ServerOperation: BashOperation, Identifiable {
+class ServerOperation: BashOperation, Identifiable, @unchecked Sendable {
     
     let model: String
     let port: Int
